@@ -1,0 +1,22 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@nuxtjs/axios",
+      "@nuxtjs/auth-next"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "nuxt.config.ts",
+    "plugins/**/*",
+    "store/**/*",
+    "middleware/**/*"
+  ]
+}
